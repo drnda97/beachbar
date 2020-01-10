@@ -12,8 +12,10 @@ html,
   padding: 0;
   background-color: #f4f5f5;
   font-family: 'Poller One', serif;;
+}.secret{
+  display: none !important;
 }
-/* ================================nav===================================== */
+/* ======================navbar========================================== */
 .nav-wrapper{
   width: 1200px;
   margin: 0 auto;
@@ -29,6 +31,30 @@ nav{
   transition: all .5s linear;
   z-index: 999;
 }
+.hamburger{
+  width: 50%;
+  float: right;
+  cursor: pointer;
+}
+.close{
+  display: block;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+.close img{
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+#hamburger_icon{
+  display: block;
+  float: right;
+  padding: 5px;
+}
 .logo{
   transition: all .2s linear;
   display: block;
@@ -42,26 +68,24 @@ nav{
 nav ul{
   list-style: none;
   padding: 0;
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
   padding-bottom: 45px;
+  position: relative;
+  z-index: 1000;
 }
 nav ul li{
   width: 17%;
   float: left;
   text-align: center;
-  margin: 0 25px;
+  margin: 0 15px;
+  padding-top: 10px;
   color: #051f34;
 }
 nav ul li a{
   display: block;
   float: none;
+  padding-top: 5px;
   text-decoration: none;
   color: #051f34;
-}
-.strech{
-  content: '';
-  display: block;
-  height: 100px;
-  clear: both;
 }

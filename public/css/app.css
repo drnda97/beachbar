@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Poller+One|Pacifico&display=swap');
+.clearfix::after{
+  display: block;
+  height: 1px;
+  content: '';
+  clear: both;
+  visibility: hidden;
+}
+html,
+#main-body{
+  margin: 0;
+  padding: 0;
+  background-color: #f4f5f5;
+  font-family: 'Poller One', serif;;
+}
+/* ================================nav===================================== */
+.nav-wrapper{
+  width: 1200px;
+  margin: 0 auto;
+}
+nav{
+  display: block;
+  width: 100%;
+  font-family: 'Poller One', serif;
+  font-size: 16px;
+  border-bottom: 1px solid #bad6db;
+  box-shadow: 0px 5px 5px grey;
+  background-color: #f4f5f5;
+  transition: all .5s linear;
+  z-index: 999;
+}
+.logo{
+  transition: all .2s linear;
+  display: block;
+  margin: 0 auto;
+}
+.logo img{
+  transition: all .2s linear;
+  margin: 0 40%;
+  width: 220px;
+}
+nav ul{
+  list-style: none;
+  padding: 0;
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 45px;
+}
+nav ul li{
+  width: 17%;
+  float: left;
+  text-align: center;
+  margin: 0 25px;
+  color: #051f34;
+}
+nav ul li a{
+  display: block;
+  float: none;
+  text-decoration: none;
+  color: #051f34;
+}
+.strech{
+  content: '';
+  display: block;
+  height: 100px;
+  clear: both;
+}

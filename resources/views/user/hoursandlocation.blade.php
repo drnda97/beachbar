@@ -1,5 +1,5 @@
 @extends('layouts/app')
 
 @section('content')
-    <h1>Welcome to Hours & Location</h1>
+    <h1>Hours & Location</h1>
 @endsection

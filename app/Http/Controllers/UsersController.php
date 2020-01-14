@@ -2,13 +2,17 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
+use App\User;
+use DB;
 
 class UsersController extends Controller
 {
     public function index()
     {
-        return view('user/welcome');
+        $images = DB::table('images')->where('id_option', '5')->get();
+        return view('user/welcome')->with('images', $images);
     }
     public function menu()
     {

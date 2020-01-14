@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Poller+One|Pacifico&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  text-align: center;  
+}
 .clearfix::after{
   display: block;
   height: 1px;
@@ -88,4 +93,93 @@ nav ul li a{
   padding-top: 5px;
   text-decoration: none;
   color: #051f34;
+}
+/* ======================starpage========================================== */
+.start-images{
+  width: 50%;
+  display: block;
+  float: left;
+}
+.start-images div{
+  height: 450px;
+  margin: 5px;
+  border: 1px solid lightgrey;
+  box-shadow: 5px 5px 5px lightgrey;
+}
+.start-paragraph h2{
+  display: block;
+  text-align: center;
+  font-family: 'Poller One', sans-serif;
+  color: #051f34;
+  font-size: 32px;
+  clear: both;
+  margin: 15px;
+}
+.start-images div img{
+  display: block;
+  float: inherit;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.parallax{
+  position: relative;
+  height: 600px;
+  z-index: 1;
+  background-image:  url('/images/pebbles/1.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+   -webkit-background-size: 100%;
+   -o-background-size: 100%;
+   -moz-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.parallax img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  z-index: 99;
+}
+.menu-btn{
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  text-decoration: none;
+  text-align: center;
+  color: #f4f5f5;
+  background-color: #051f34;
+  width: 100px;
+  padding: 10px 35px;
+  margin: 150px auto;
+  font-family: 'Poller One', serif;
+  z-index: 999;
+}
+.menu-btn:hover{
+  font-weight: bolder;
+}
+.parallax h1{
+  color: #f4f5f5;
+  text-align: center;
+  font-size: 150px;
+} 
+/* =====================================================footer====================================== */
+footer{
+  display: block;
+  background-color: #051f34;
+}
+footer a{
+  display: block;
+  float: left;
+  width: 30px;
+  margin: 5px;
+}
+footer a img{
+  width: 100%;
 }

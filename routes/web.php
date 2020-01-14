@@ -10,10 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-//classic way without custom controller
-// Route::get('/', function () {
-//     return view('user/welcome');
-// });
 
 Route::get('/', 'UsersController@index');
 Route::get('/menu', 'UsersController@menu');

@@ -11,8 +11,13 @@ class UsersController extends Controller
 {
     public function index()
     {
+        $text = DB::table('text')->where('option_name', 'startpage')->get();
         $images = DB::table('images')->where('id_option', '5')->get();
-        return view('user/welcome')->with('images', $images);
+        $data = array(
+            'images' => $images,
+            'text' => $text 
+        );
+        return view('user/welcome')->with('data', $data);
     }
     public function menu()
     {

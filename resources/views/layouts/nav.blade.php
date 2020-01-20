@@ -9,7 +9,7 @@
     <div class="close secret">
       <img src="{{asset('images/icons/2.png')}}" alt="x-icon" id="x_icon">
     </div>
-    <li><a href="/hoursandlocation">Hours & Location</a></li>
+    <li><a href="/location">Hours & Location</a></li>
     <li><a href="/menu">Menu</a></li>
     <li><a href="/contact">Contact</a></li>
     <li><a href="/feed">News Feed</a></li>

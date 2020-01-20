@@ -183,3 +183,195 @@ footer a{
 footer a img{
   width: 100%;
 }
+footer span{
+  display: block;
+  float: left;
+  color: #027495;
+  line-height: 2;
+  font-size: 22px;
+}
+/* =====================================================location====================================== */
+.location{
+  text-align: center;
+  font-family: 'Poller One', serif;
+}
+.contact a,
+.location a{
+  display: block;
+  margin: 10px;
+  text-decoration: none;
+  color: #027495;
+}
+.location h2{
+  font-size: 32px;
+  color: #051f34;
+}
+.location h3{
+  color: #051f34;
+}
+.location p{
+  color: #051f34;
+}
+.mapouter{
+  margin: 0 auto;
+}
+/* =====================================================feed====================================== */
+.news-cover{
+display: block;
+width: 100%;
+box-shadow: 0 5px 5px silver;
+}
+.news_wrapper{
+background-color: #bad6db;
+padding-bottom: 15px;
+}
+#newsFeedMain{
+display: block;
+width: 1200px;
+margin: 15px auto;
+text-align: center;
+}
+.card{
+display: block;
+width: 50%;
+outline: 1px solid silver;
+background-color: #f4f5f5;
+text-align: center;
+}
+.card img{
+width: 100%;
+box-shadow: 0px 5px 5px silver;
+}
+.card p{
+font-family: 'Poller One', sans-serif;
+color: #051f34;
+margin-bottom: 10px;
+font-size: 20px;
+}
+#newsFeedMain div:nth-child(odd){
+margin-bottom: 50px !important;
+margin-left: 150px;
+float: left !important;
+}
+#newsFeedMain div:nth-child(even){
+float: right;
+margin-right: 150px;
+} 
+/* =====================================================menu====================================== */
+h1{
+font-family: 'Poller One', serif;
+color: #051f34;
+font-size: 100px;
+text-align: center;
+margin: 0px;
+}
+.menu{
+display: block;
+width: 70%;
+margin: 0 auto;
+position: relative;
+}
+.first_img{
+position: absolute;
+bottom: 100px;
+right: 0;
+width: 200px;
+transform: rotate(-28deg);
+}
+.second_img{
+position: absolute;
+bottom: 550px;
+right: 0;
+width: 200px;
+}
+.third_img{
+position: absolute;
+bottom: 1000px;
+right: 0;
+width: 200px;
+transform: rotate(-28deg);
+}
+.menu ul{
+color: #f4f5f5;
+list-style: none;
+padding: 0;
+font-family: 'Pacifico', cursive;
+width: 100%;
+}
+.menu ul li{
+display: block;
+text-align: left;
+margin: 10px;
+width: 100%;
+}
+.menu ul li a{
+text-decoration: none;
+padding: 0 15px;
+line-height: 2;
+font-size: 26px;
+color: #051f34 !important;
+}
+.sub_sub_list{
+font-family: 'Dancing Script', cursive !important;
+padding-left: 25px !important;
+color: #051f34 !important;
+font-size: 28px !important;
+width: 100%;
+}
+.sub_sub_list small{
+display: block;
+font-size: 20px !important;
+padding-left: 25px !important;
+color: #051f34;
+width: 70%;
+}
+.sub_list li{
+display: block;
+width: 100%;
+}
+.ul_sub_ul li{
+color: #f4f5f5 !important;
+display: block;
+padding: 0 15px;
+}
+.menu ul div{
+display: none;
+}
+.active{
+display: block;
+}
+/* =====================================================contact====================================== */
+.contact{
+  text-align: center;
+  font-family: 'Poller One', serif;
+  margin-bottom: 30px;
+}
+.contact h2{
+  font-size: 48px;
+  color: #051f34;
+}
+.contact p {
+  font-size: 14px !important;
+  margin: 30px auto;
+  color: #051f34;
+}
+.contact button{
+  text-decoration: none;
+  text-align: center;
+  color: #f4f5f5;
+  background-color: #051f34;
+  width: 100px;
+  padding: 10px 35px;
+  margin: 150px auto;
+  font-family: 'Poller One', serif;
+  border: 0;
+  margin: 15px auto !important;
+  cursor: pointer;
+}
+.contact input{
+  display: block;
+  width: 40%;
+  height: 32px;
+  margin: 10px auto;
+  padding: 5px;
+}

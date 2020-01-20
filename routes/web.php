@@ -14,5 +14,5 @@
 Route::get('/', 'UsersController@index');
 Route::get('/menu', 'UsersController@menu');
 Route::get('/contact', 'UsersController@contact');
-Route::get('/hoursandlocation', 'UsersController@hoursandlocation');
+Route::get('/location', 'UsersController@hoursandlocation');
 Route::get('/feed', 'UsersController@feed');

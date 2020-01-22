@@ -4,7 +4,6 @@ window.addEventListener('scroll', (e) => {
   var logo = document.querySelector('.logo');
   var ul_nav = document.querySelector('.nav_ul');
   if(window.scrollY > 0){
-    navbar.style.position = 'fixed';
     navbar.style.top = '0';
     navbar.style.left = '0';
     logo.style.margin = '0';
@@ -17,6 +16,9 @@ window.addEventListener('scroll', (e) => {
     ul_nav.style.float = 'right';
     ul_nav.style.paddingTop = '30px';
     ul_nav.style.paddingBottom = '30px';
+  }
+  if(window.scrollY > 120){
+    navbar.style.position = 'fixed';    
   }
   if(window.scrollY === 0){
     navbar.style.position = '';
@@ -48,5 +50,20 @@ function dropDownMenu(dropdown){
         dropdownContent.style.display = "block";
       }
     });
+  }
+
+  var slideIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.querySelectorAll(".slider ul li");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 5000); // Change image every 5 seconds
   }
 }

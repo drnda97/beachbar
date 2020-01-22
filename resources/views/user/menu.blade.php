@@ -1,6 +1,13 @@
 @extends('layouts/app')
 
 @section('content')
+    <div class="slider">
+        <ul>
+            <li><img src="{{asset('images/pebbles/1.jpg')}}" alt="slider-image"></li>
+            <li><img src="{{asset('images/pebbles/11.jpg')}}" alt="slider-image"></li>
+            <li><img src="{{asset('images/pebbles/3.jpg')}}" alt="slider-image"></li>
+        </ul>
+    </div>
     <h1>Menu</h1>
     <div class="menu">
         <ul>
@@ -20,5 +27,10 @@
                 </div>
             @endforeach
         </ul>
+        @foreach($data['images'] as $image)
+            <div class="menu-image-with-border">
+                <img src="<?php echo $image->img_url; ?>" alt="">
+            </div>
+        @endforeach
     </div>
 @endsection

@@ -20,6 +20,26 @@ html,
 }.secret{
   display: none !important;
 }
+/* ======================slider========================================== */
+.slider{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.slider ul{
+  width: 300%;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.slider ul li{
+  width: 33.33%;
+}
+.slider ul li img{
+  width: 100%;
+}
+
 /* ======================navbar========================================== */
 .nav-wrapper{
   width: 1200px;
@@ -296,7 +316,7 @@ color: #f4f5f5;
 list-style: none;
 padding: 0;
 font-family: 'Pacifico', cursive;
-width: 100%;
+width: 80%;
 }
 .menu ul li{
 display: block;
@@ -339,6 +359,31 @@ display: none;
 }
 .active{
 display: block;
+}
+.sub_sub_list small, .dropdown{
+  text-align: left;
+}
+.menu-image-with-border img{
+  width: 300px;
+  border: 10px solid #fff;
+  background: #fff; 
+}
+.menu-image-with-border:nth-child(even) {
+  position: absolute;
+  transform: rotate(-20deg);
+  top: 0;
+  right: 0;
+}
+.menu-image-with-border:nth-child(odd) {
+  position: absolute;
+  transform: rotate(20deg);
+}
+.menu-image-with-border:last-child{
+  top: 900px;
+}
+.menu-image-with-border:nth-child(3){
+  top: 400px;
+  right: 0;
 }
 /* =====================================================contact====================================== */
 .contact{
